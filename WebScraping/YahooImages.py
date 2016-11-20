@@ -37,7 +37,3 @@ for i in range(int(sys.argv[1])):
         imgFile.write(chunk)
 
     imgFile.close()
-
-
-#note it will not work with some images because this earch Flkr images from yahoo, not really yahoo images
-# you can change it if you want but we'll leave it as it is,
