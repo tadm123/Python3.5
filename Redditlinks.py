@@ -22,7 +22,7 @@ while True:                             #We test if the subreddit exists, if it 
 
 
 url= 'https://www.reddit.com/r/' + subreddit   #example url
-os.chdir('c:\\users\\patty\\desktop')
+os.chdir('c:\\users\\patty\\desktop')          #Edit to the location where you want to create the folder
 if not os.path.isdir('RedditLinks'):
     os.makedirs('RedditLinks')
 
