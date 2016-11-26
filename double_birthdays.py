@@ -52,15 +52,15 @@ p = round((1 - p_) *100,5)
 
 #-------------------------------------------------
 
-
 Percentage = round(count / len(check) * 100,5)
 print('\n')
 print('Chance of double birthdays sampling it %s times: %%%s' %(NUM_OF_SAMPLES,Percentage))
 print('Theoretical chance: %%%s\n' %p)
 
 
-#Peering into the results from a single sample:
 '''
+#Peering into the results from a single sample:                 
+
 sum=0
 print('Result from a single sample:')
 print(' Student     Frequecy')       #Data just 1 sample
@@ -69,4 +69,5 @@ for num,freq in my_dict.items():
 	print('%s\t\t%s' %(str(num).rjust(6),str(freq).rjust(1)))
 	sum=sum+freq
 '''
+
 
