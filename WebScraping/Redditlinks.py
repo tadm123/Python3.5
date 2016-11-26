@@ -22,11 +22,11 @@ while True:                             #We test if the subreddit exists, if it 
 
 
 url= 'https://www.reddit.com/r/' + subreddit   #example url
-os.chdir('c:\\users\\patty\\desktop')
+os.chdir('c:\\users\\patty\\desktop')          #choose location where you want to store your folder containing the .txt file
 if not os.path.isdir('RedditLinks'):
     os.makedirs('RedditLinks')
 
-res= requests.get(url, headers = {'User-agent': 'your bot 0.1'})   #from reddit, this fixes 404 problem
+res= requests.get(url, headers = {'User-agent': 'your bot 0.1'})   #This fixes 404 problem
 res.raise_for_status()
 
 soup = bs4.BeautifulSoup(res.text, "html.parser")
