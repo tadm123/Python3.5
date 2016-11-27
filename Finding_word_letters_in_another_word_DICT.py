@@ -1,4 +1,7 @@
-import os
+# Problem 12 from http://greenteapress.com/thinkpython2/html/thinkpython2011.html: 
+# Two words “interlock” if taking alternating letters from each forms 
+# a new word. For example, “shoe” and “cold” interlock to form “schooled”.    
+# Solution using a Dictionary:
 
 def histogram(s):
     d = dict()
@@ -15,8 +18,6 @@ def is_match(s,s1):                     #both arguments are dictionaries
             return False
     return True
 
-
-os.chdir('c:\\users\\patty\\desktop')
 print('Type a word:')
 some_word = input()
 s= histogram(some_word)
