@@ -1,6 +1,7 @@
-# Using Lists
-
-import os
+# Problem 12 from http://greenteapress.com/thinkpython2/html/thinkpython2011.html: 
+# Two words “interlock” if taking alternating letters from each forms 
+# a new word. For example, “shoe” and “cold” interlock to form “schooled”.    
+# Solution using a Lists:
 
 def filling_alph(b1):                     #This function fills up the alphabet list     
         alphabet = [0] * 26                
@@ -16,9 +17,7 @@ def check_match(alph1,alph2):           #checks if all letters of alph1 are in a
                         return False
         return True
                 
-os.chdir('c:\\users\\patty\\desktop')          
 lookup_dict = dict(zip("abcdefghijklmnopqrstuvwxyz", range(26)))  #Creating a lookup table
-
 print('Type a word:')
 some_word = input()    
 alph1= filling_alph(some_word)
@@ -31,10 +30,3 @@ for line in fp:
 		print(word)
 		
 fp.close()
-
-
-
-
-
-
-		
