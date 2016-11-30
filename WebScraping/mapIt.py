@@ -1,5 +1,5 @@
-# mapIt.py   - Launches a map in the browser using an address from the
-# command line or clipboard.
+# "Automate the Boring Stuff" Book
+# CH8: mapIt.py   - Launches a map in the browser using an address from the command line or clipboard.
 
 import webbrowser, sys, pyperclip
 
