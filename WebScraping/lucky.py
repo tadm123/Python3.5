@@ -1,4 +1,5 @@
-# lucky.py - Opens several Google search results.
+# "Automate the Boring stuff" Book.
+# CH8: lucky.py - Opens several Google search results.
 
 import requests, sys, webbrowser, bs4
 
