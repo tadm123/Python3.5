@@ -33,29 +33,3 @@ elif len(sys.argv) == 2:
 
 mcbShelf.close()
    
-
-#to delete a dictionary item use: del name['Daniel']
-#to delete the whole dictionary items: del name
-
-#ex:
-'''
-(clipboard: 'Write a program that opens all')
-
-py.exe mcb.pyw save test1
-
-(clipboard: '2222222222222222')
-
-py.exe mcb.pyw save test2
-
-(clipboard: 'HELLO MY FRIENDASDF')
-
-py.exe mcb.pyw save test3
-
-
-py.exe mcb.pyw test1
-'Write a program that opens all'
-
-py.exe mcb.pyw list
-['test3','test2','test1']
-'''
-
