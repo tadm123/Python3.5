@@ -12,9 +12,3 @@ datesstring= datesRegex.sub(r'\1**-**-****', text)
 pyperclip.copy(datesstring)
 print(datesstring)
 
-'''
-Copied to clipboard: 
-22/04/1996
-22/04/96
-04/22/96
-'''
