@@ -15,9 +15,8 @@ while not url.endswith('#'):
     soup = bs4.BeautifulSoup(res.text, "html.parser")       #or just (res.text)
 
     # Find the URL of the comic image.
-    comicElem = soup.select('#comic img')       #put the image here (.select is used to parse the url)
-                                                #<div id = "comic"> == $0
-                                                #    <img src = "//imgs.xkcd.com/comics/mushrooms.png" title...
+    comicElem = soup.select('#comic img')      
+                                             
     if comicElem == []:
         print('Could not find comic image.')
     else:
@@ -29,8 +28,8 @@ while not url.endswith('#'):
             res.raise_for_status()
         except requests.exceptions.MissingSchema:
             #skip this comic
-            prevLink = soup.select('a[rel = "prev"]')[0]    #All elements named <a> that have an attribute named rel with value prev (note [0] gets you only the first element found of the list, [1] would be the second etc)
-            url = 'http://xkcd.com' + prevLink.get('href')  # ex: <a rel = "prev" href="/1747/"  <- 1747 is the previous page (http:/xcld.com/1747)
+            prevLink = soup.select('a[rel = "prev"]')[0]    #All elements named <a> that have an attribute named rel with value prev e second etc
+            url = 'http://xkcd.com' + prevLink.get('href')  
             continue
 
         #Save the image to ./xkcd.
