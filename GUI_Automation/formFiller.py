@@ -76,16 +76,4 @@ for person in formData:
 
              #Click the Submit another response link.
              pyautogui.click(submitAnotherLink[0],submitAnotherLink[1])
-             
-
-
-
-
-
-'''
-pyautogui.rightClick(22, 789)
-
-pyautogui.click(206, 684)
-pyautogui.typewrite('mspaint.exe', 0.25)
-pyautogui.typewrite(['enter'])
-'''
+           
