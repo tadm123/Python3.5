@@ -25,13 +25,3 @@ for i in range(int(number)):
     pyautogui.click(449, 286)
     time.sleep(2)
    
-
-
-
-'''
-pyautogui.rightClick(22, 789)
-
-pyautogui.click(206, 684)
-pyautogui.typewrite('mspaint.exe', 0.25)
-pyautogui.typewrite(['enter'])
-'''
