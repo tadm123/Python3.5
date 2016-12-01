@@ -1,4 +1,5 @@
-#Finding a word with three consecutive letters
+# ThinkPython - http://greenteapress.com/thinkpython2/html/thinkpython2010.html
+# Project: Finding a word with three consecutive letters
 
 import os
 
@@ -16,7 +17,7 @@ for letter in words_list:
 fp.close()
 
 #Finding a word with three consecutive double letters (ex: mississippi, if there was a double 'i' it would qualify)
-			
+'''			
 			
 fp = open('allwords.txt')
 words = fp.read()
@@ -25,7 +26,5 @@ mo = regex.search(words)
 mo.group()
 fp.close()
 
-        #note \1 backreference to a named group; it matches whatever text was matched by the earlier group
-        #\1 is equivalent to re.search(...).group(1)
 
- 
+'''
