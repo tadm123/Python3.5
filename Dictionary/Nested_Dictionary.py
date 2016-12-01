@@ -1,4 +1,6 @@
-#Goes through the Dictionary and prints all items that are being brought to the picnic by the guests (Alice, Bob and Carol)
+# "Automate the Boring Stuff" book
+# CH5 Exercise: Nested Dictionary. 
+# Goes through the Dictionary and prints all items that are being brought to the picnic by the guests (Alice, Bob and Carol)
 
 allGuests= {'Alice': {'apples':5, 'pretzels' : 12 },       #Guests brings different picnic items
             'Bob': {'ham sandwiches': 3, 'apples' :2},
@@ -19,17 +21,4 @@ print(' - Cups            ' + str(totalBrought(allGuests, 'cups')))
 print(' - Cakes           ' + str(totalBrought(allGuests, 'cakes')))
 print(' - Ham Sandwiches  ' + str(totalBrought(allGuests, 'ham sandwiches')))
 print(' - Apple Pies      ' + str(totalBrought(allGuests, 'apple pies')))
-
-
-
-
-# Ex: different example, to know how nested dictionaries work:
-#  picnicItems = {'apples': 5, 'cups' : 2}
-#  picnicItems.get('apples',0)
-#>>5
-
-#  picnicItems = {'apples': {'red':3, 'green': 2}, 'cups' : 2}
-#  picnicItems.get('apples',0)
-#>>{'green': 2, 'red': 3}
-
 
