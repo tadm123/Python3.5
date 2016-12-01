@@ -1,0 +1,33 @@
+# Recursive Exercises - ThinkPython - http://greenteapress.com/thinkpython2/html/thinkpython2006.html#sec62
+
+
+def countdown(n):
+    if n <= 0:     #if n is less or equal than 0
+        print('Blastoff!')
+    else:
+        print(n)
+        countdown(n-1)  #calls itself
+        
+def fac(n):       
+    if n == 0:
+        return 1
+    else:
+        return n * fac(n-1)
+
+#Step by Step:
+def factorial(n): 
+    space = ' ' * (4 * n)
+    print(space, 'factorial', n)
+    if n == 0:
+        print(space, 'returning 1')
+        return 1
+    else:
+        recurse = factorial(n-1)
+        result = n * recurse
+        print(space, 'returning', result)
+        return result
+        
+ coundown(5)
+ fac(10)
+ factorial(10)
+        
