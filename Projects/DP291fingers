@@ -1,0 +1,21 @@
+# 0 to 100 real quick. 
+# You will be given inputs which correspond to the 10 digits of a pair of hands in the 
+# following format, where 1 means the finger is raised, and 0 means the finger is down
+# LP	LR	LM	LI	LT	RT	RI	RM	RR	RP
+# 0	  1 	1	  1	  0	  1	  1	  1	  0	  0
+# https://www.reddit.com/r/dailyprogrammer/comments/4z04vj/20160822_challenge_280_easy_0_to_100_real_quick
+
+
+def fingers(s):
+    dic = {'01000':1,'01100':2,'01110':3,'01111':4,'10000':5,
+   '11000':6,'11100':7,'11110':8,'11111':9}
+    try:
+        singles= s[5:]                                        #gets second half
+        tens = s[:5][::-1]                                    #gets first half and inverses it
+        print('%s -> %d' %( s, dic[tens]*10 + dic[singles]))
+    except KeyError:
+        print('%s -> Invalid' %s)
+
+sample = ['0111011100','1010010000','0011101110','0000110000','1111110001'] 
+for i in sample:
+    fingers(i)
