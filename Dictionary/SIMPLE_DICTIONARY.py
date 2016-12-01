@@ -1,8 +1,10 @@
-#Fill in a dictionary and then display it on screen
-'''
-name={}
+# "Automate the Boring Stuff" Book.
+#CH 5 Exercises:
 
-while True:                           #fill in the dictionary
+#Filling in a Dictionary.
+
+name={}                            #initializing dictionary
+while True:                          
     print('Type Key (type exit to exit):')
     i= input()
     if i == 'exit':
@@ -14,12 +16,13 @@ while True:                           #fill in the dictionary
 
 print('Fruit\t\tQuantity')
 print('--------------------------')
-for i,k in name.items():       #Print the dictionary. i is key, k is the value.
+for i,k in name.items():       #Printing the dictionary, where 'i' is key, 'k' is the value.
     print(i + '\t\t' + str(k))      
-'''    
+   
 
+'''
+#Putting a list of values into a Dictionary:
 
-#Putting a list of values into a Dictionary
 name={}
 fruit = ['Bananas','Pears','Oranges','Apples']
 num =  [10,4,23,5]
@@ -29,3 +32,4 @@ for i in range(len(fruit)):
 
 for i,k in name.items():        #print them
     print(i + '\t\t' + str(k)) 
+'''
