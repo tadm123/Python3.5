@@ -1,3 +1,8 @@
+# "Automate the Boring Stuff" Book
+# CH9: Selective Copy Project
+# Write a program that walks through a folder tree and searches for files with a 
+# certain file extension (such as .pdf or .jpg). Copy these files from whatever location 
+# they are in to a new folder.
 
 '''
 #Add only .pdf files from the Desktop into the ZIP file 'PDFfiles.zip'
@@ -22,7 +27,7 @@ zp.close()
 
 
 #---------------------------------------------------------------------------------------
-#Add all files except .txt and .exe from \\loops folder into the ZIp file 'Test.zip'
+#Add all files except .txt and .exe from \\loops folder into the ZIP file 'Test.zip'
 
 import zipfile,os
 
