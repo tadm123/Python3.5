@@ -1,5 +1,5 @@
-#  Code from the "Automate The Boring Stuff" Book
-#  CH 5: Tic-Tac-Toe Board. 
+#   "Automate The Boring Stuff" Book
+#  CH 5 Exercise: Tic-Tac-Toe Board. 
 #  A simple game of Tic-Tac-Toe in a dictionary.
 
 
