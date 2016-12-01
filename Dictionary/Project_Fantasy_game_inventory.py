@@ -6,7 +6,22 @@
 # value {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 # means the player has 1 rope, 6 torches, 42 gold coins, and so on.
 
-#Note using get() you don't need two variables in loop, with get() you return the value of the key
+    
+# Acessing the key(k) and value(k) in the for loop.
+
+def displayInventory(invent):
+
+    print('Inventory:')
+    item_total = 0
+    for k, v in invent.items():          
+        item_total += invent.get(k,0)
+        print(str(v)+ '\t'+ k)
+    print("Total number of items: " + str(item_total))
+
+inventory = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+displayInventory(inventory)
+
+#Or using the get() function:
 
 '''def displayInventory(invent):
     item_total=0
@@ -21,17 +36,3 @@
 inventory= {'rope':1, 'torch': 6, 'gold coin': 42, 'dagger':1, 'arrow':12}
 displayInventory(inventory)
 '''
-    
-# Or not using the get() function and acessing the key(k) and value(k) in the for loop.
-
-def displayInventory(invent):
-
-    print('Inventory:')
-    item_total = 0
-    for k, v in invent.items():          #k is the key() Ex:'rope',  v is the value() Ex:1 . item() is both
-        item_total += invent.get(k,0)
-        print(str(v)+ '\t'+ k)
-    print("Total number of items: " + str(item_total))
-
-inventory = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
-displayInventory(inventory)
