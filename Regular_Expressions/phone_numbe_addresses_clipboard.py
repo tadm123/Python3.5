@@ -24,20 +24,7 @@ emailRegex= re.compile(r'''(
 text = str(pyperclip.paste())               #paste all clipboard string in to 'text' string
                                             #This string will contain all complete string
 matches = []
-for groups in phoneRegex.findall(text):             #findall will extract all the phonenumbers in the form 'phoneRegex'
-                                                    # 
-                                                    # [('561', '699', '5175'),
-                                                    # [('555', '453', '9070'),
-                                                    # [('561', '208', '8167'),
-                                                    #     ...
-                                                    # group[1]  group[3]  group[5]
-                                                    
-   # print('groups[0]: '+ groups[0]+' groups[1]: ' + groups[1])
-   # print('groups[2]: '+ groups[2]+' groups[3]: ' + groups[3])
-   # print('groups[4]: '+ groups[4]+' groups[5]: ' + groups[5])
-   # print('groups[6]: '+ groups[6]+' groups[7]: ' + groups[7])
-   # print('groups[8]: '+ groups[8])
-    
+for groups in phoneRegex.findall(text):             
     phoneNum= '-'.join([groups[1],groups[3],groups[5]])   #the string phoneNum= '561-699-5175'
     if groups[8] != ' ':                #if it has an extension
         phoneNum += ' x' + groups[8]
@@ -57,7 +44,7 @@ else:
     print('No phone numbers of email addresses found.')
 
 
-'''resuts:
+'''Output:
 
 800-420-7240 x
 415-863-9900 x
