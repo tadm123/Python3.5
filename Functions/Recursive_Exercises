@@ -1,6 +1,5 @@
 # Recursive Exercises - ThinkPython - http://greenteapress.com/thinkpython2/html/thinkpython2006.html#sec62
 
-
 def countdown(n):
     if n <= 0:     #if n is less or equal than 0
         print('Blastoff!')
