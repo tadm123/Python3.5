@@ -22,7 +22,6 @@ while os.path.exists('c:\\users\\patty\\desktop\\DailyBibleVerse\\verse%s.jpg' %
     num += 1
     
 File = open('c:\\users\\patty\\desktop\\DailyBibleVerse\\' +'verse'+ str(num)+ '.jpg', 'wb')  #this is the name
-#if os.path.isfile('c:\\users\\patty\\desktop\\DailyBibleVerse\\'): how to add a number if file already exists?
 
 res = requests.get(BibleUrl)
 
